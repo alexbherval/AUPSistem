@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Link de utilização do Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="../css/styleLogin.css" />
+    <title>Login de Usuário</title>
+  </head>
+  <body>
+    <!--Formulario de Login-->
+    <div class="container">
+      <div class="container-fluid">
+        <form
+          class="form-signin shadow rounded bg-light border border-success pt-4"
+        >
+          <div class="text-center mb-4">
+            <img
+              class="mb-4"
+              src="../img/LogoModernaAUPVertical.jpg"
+              alt=""
+              width="272"
+              height="80"
+            />
+            <h1 class="h3 mb-3 font-weight-normal">Sistema Gencial de ONGs</h1>
+            <p>Gestão Eletrônica Unificada de Processos e Serviços</p>
+          </div>
+
+          <div class="form-label-group">
+            <input
+              type="email"
+              id="inputEmail"
+              class="form-control"
+              placeholder="Endereço de email"
+              required
+              autofocus
+            />
+            <label for="inputEmail">Usuário do Sistema</label>
+          </div>
+
+          <div class="form-label-group">
+            <input
+              type="password"
+              id="inputPassword"
+              class="form-control"
+              placeholder="Senha"
+              required
+            />
+            <label for="inputPassword">Digite sua Senha</label>
+          </div>
+
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="lembrar de mim" /> Lembrar de mim
+            </label>
+          </div>
+
+          <div class="d-grid gap-2 col-12 mx-auto btn-lg">
+            <button class="btn btn-success" type="submit">Entrar</button>
+          </div>
+          <p class="mt-5 mb-3 text-muted text-center">&copy;BORGES T3CH</p>
+          <div class="suporteTecnico">
+            <p class="etiqueta">Web:&nbsp</p>
+            <a href="http://www.borgesti.com.br">https://www.borgesti.com.br</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--Final do FormLogin-->
+
+    <!--Scripts Bootstrap-->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
