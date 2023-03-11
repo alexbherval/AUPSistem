@@ -19,19 +19,30 @@
 .sidebar.close{
   width: 78px;
 }
+
+
+.sidebar.close .logo-details img{
+height: 50px;
+width: 50px;
+}
+
+
 .sidebar .logo-details{
   height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .sidebar .logo-details img{
-  font-size: 30px;
-  color: #fff;
-  height: 50px;
-  min-width: 78px;
-  text-align: center;
-  line-height: 50px;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  justify-content: center;
+  margin-top: 15%;
+  background: #0a7a35;
+  transition: all 0.5s ease;
 }
 .sidebar .logo-details .logo_name{
   font-size: 22px;
