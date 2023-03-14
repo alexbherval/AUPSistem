@@ -161,7 +161,7 @@
     
     ">
 <div class="container-fluid">
-  <form class="row g-3 p-3">
+  <form class="row g-3 p-5">
     <div class="col-md-2">
       <label for="CPF" class="form-label">Benefício Social:</label>
       <input type="text" class="form-control" id="CPF">
@@ -203,28 +203,31 @@
     </div>
 
 
-
     <div class="col-md-2">
-      <legend class="col-form-label col-sm-2 pt-0">PCD:</legend>
-          <div class="col-md-12 pt-1">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                <label class="form-check-label" for="inlineRadio1">Sim</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">Não</label>
-              </div>
-          </div>
-      </legend>
+      <label for="statusOcupacional" class="form-label">PCD:</label>
+      <select id="statusOcupacional" class="form-select">
+      <option selected></option>
+      <option>Sim</option>
+      <option>Não</option>
+      </select>
     </div>
 
-        <div class="col-md-3">
+    <div class="col-md-2">
+      <label for="statusOcupacional" class="form-label">Gênero:</label>
+      <select id="statusOcupacional" class="form-select">
+      <option selected></option>
+      <option>Homen</option>
+      <option>Mulher</option>
+      <option>Outros</option>
+      </select>
+    </div>
+
+        <div class="col-md-2">
       <label for="estadoCivil" class="form-label">Estado Cívil:</label>
       <input type="text" class="form-control" id="estadoCivil">
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-2">
       <label for="profissao" class="form-label">Profissão:</label>
       <input type="text" class="form-control" id="profissao">
     </div>
