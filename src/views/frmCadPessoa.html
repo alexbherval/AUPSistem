@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
 
-    <title>CadPessoa</title>
+    <title>Cadastro de Pessoa</title>
   </head>
   <body>
     <div class="sidebar close">
@@ -249,7 +249,7 @@
         <span class="text" style="color: whitesmoke">CADASTRO DE PESSOA</span>
       </div>
       <div class="container-fluid pt-3">
-        <form class="row g-3 p-5 pt-3">
+        <form class="row g-3 p-5 pt-3" id="frmPessoa">
           <div class="col-md-2">
             <label for="beneficioSocial" class="form-label"
               >Benefício Social:</label
@@ -468,7 +468,11 @@
               </svg>
               Excluir
             </button>
-            <button type="submit" class="btn btn-success">
+            <button
+              type="submit"
+              class="btn btn-success"
+              onclick="frmcadpessoa()"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -494,5 +498,6 @@
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../js/sidebars.js"></script>
     <script src="../controllers/appConsultaCep.js"></script>
+    <script src="../controllers/frmCadPessoas.js"></script>
   </body>
 </html>

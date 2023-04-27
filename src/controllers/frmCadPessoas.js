@@ -1,4 +1,9 @@
-const axios = require("axios");
+const frmPessoa = document.getElementById("frmPessoa");
+function frmcadpessoa() {
+  alert(nome.value);
+}
+
+/*const axios = require("axios");
 
 const cpf = "08066273797"; // Substitua pelo CPF que deseja consultar
 
@@ -10,3 +15,4 @@ axios
   .catch((error) => {
     console.log(error);
   });
+*/

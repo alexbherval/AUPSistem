@@ -1,5 +1,5 @@
 const frmLogin = document.getElementById("frmLogin");
-
+const alertLogin = document.getElementById("alertLogin");
 frmLogin.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -10,6 +10,6 @@ frmLogin.addEventListener("submit", (e) => {
     window.location.href = "http://127.0.0.1:5500/src/views/frmCadPessoa.html?";
     // redirect to dashboard or do something else
   } else {
-    alert("Algo deu errado!");
+    alertLogin.className = "alert alert-danger";
   }
 });
