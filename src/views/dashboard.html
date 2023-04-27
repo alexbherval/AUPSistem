@@ -24,7 +24,7 @@
       </div>
       <ul class="nav-links pt-5">
         <li>
-          <a href="http://127.0.0.1:5500/src/views/dashboard.html">
+          <a href="#">
             <div class="iconNavMenu" id="sidebar">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,11 @@
 
           <ul class="sub-menu">
             <li><a class="link_name" href="#">Cadastro</a></li>
-            <li><a href="#">Pessoa</a></li>
+            <li>
+              <a href="http://127.0.0.1:5500/src/views/frmCadPessoa.html"
+                >Pessoa</a
+              >
+            </li>
             <li><a href="#">Família</a></li>
             <li><a href="#">Projeto</a></li>
             <li><a href="#">Fornecedor</a></li>
@@ -252,258 +256,14 @@
             d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
           />
         </svg>
-        <span class="text" style="color: whitesmoke">CADASTRO DE PESSOA</span>
+        <span class="text" style="color: whitesmoke">DASHBOARD</span>
       </div>
       <div class="container-fluid pt-3">
-        <form class="row g-3 p-5 pt-3" id="frmPessoa">
-          <div class="col-md-2">
-            <label for="beneficioSocial" class="form-label"
-              >Benefício Social:</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="beneficioSocial"
-              placeholder="Nº do benefício"
-            />
-          </div>
-          <div class="col-md-2">
-            <label for="CPF" class="form-label">CPF:</label>
-            <input type="text" class="form-control" id="CPF" />
-          </div>
-          <div class="col-md-2">
-            <label for="RG" class="form-label">RG:</label>
-            <input type="text" class="form-control" id="RG" />
-          </div>
-          <div class="col-md-2">
-            <label for="NIS" class="form-label">NIS:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="NIS"
-              placeholder="Número NIS"
-            />
-          </div>
-          <div class="col-md-4">
-            <label for="email" class="form-label">E-mail:</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="E-mail padrão"
-            />
-          </div>
-          <div class="col-md-3">
-            <label for="nome" class="form-label">Nome:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="nome"
-              placeholder="Nome Composto"
-            />
-          </div>
-          <div class="col-md-3">
-            <label for="sobreNome" class="form-label">Sobrenome:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="sobreNome"
-              placeholder="Sobrenome completo"
-            />
-          </div>
-          <div class="col-md-2">
-            <label for="dataNasc" class="form-label">Data Nasc:</label>
-            <input type="date" class="form-control" id="dataNasc" />
-          </div>
-          <div class="col-md-2">
-            <label for="cor" class="form-label">Cor:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="cor"
-              placeholder="Como se identifica"
-            />
-          </div>
-          <div class="col-md-2">
-            <label for="PCD" class="form-label">PCD:</label>
-            <select id="PCD" class="form-select">
-              <option selected></option>
-              <option>Sim</option>
-              <option>Não</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="genero" class="form-label">Gênero:</label>
-            <select id="genero" class="form-select">
-              <option selected></option>
-              <option>Homem</option>
-              <option>Mulher</option>
-              <option>Outros</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="estadoCivil" class="form-label">Estado Cívil:</label>
-            <input type="text" class="form-control" id="estadoCivil" />
-          </div>
-          <div class="col-md-2">
-            <label for="profissao" class="form-label">Profissão:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="profissao"
-              placeholder="Digite a profissão"
-            />
-          </div>
-          <div class="col-md-2">
-            <label for="statusOcupacional" class="form-label"
-              >Ocupacioção:</label
-            >
-            <select id="statusOcupacional" class="form-select">
-              <option selected></option>
-              <option>Empregado</option>
-              <option>Desempregado</option>
-              <option>Estudante</option>
-              <option>Pensionista</option>
-              <option>Autônomo</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="celular" class="form-label">Telefone Celular:</label>
-            <input
-              type="phone"
-              class="form-control"
-              id="celular"
-              placeholder="Digite o Celular padão"
-            />
-          </div>
-          <div class="col-md-2">
-            <label for="fixo" class="form-label">Telefone Fixo:</label>
-            <input
-              type="phone"
-              class="form-control"
-              id="fixo"
-              placeholder="Digite o telefone fixo ou recado"
-            />
-          </div>
-          <div class="col-md-6">
-            <label for="nomePai" class="form-label">Nome do Pai:</label>
-            <input type="text" class="form-control" id="nomePai" />
-          </div>
-          <div class="col-md-6">
-            <label for="nomeMae" class="form-label">Nome de Mãe:</label>
-            <input type="text" class="form-control" id="nomeMae" />
-          </div>
-          <div class="col-md-2">
-            <label for="cep" class="form-label">CEP:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="cep"
-              placeholder="Auto Busca"
-              maxlength="8"
-              minlength="8"
-            />
-          </div>
-          <div class="col-4">
-            <label for="logradouro" class="form-label">Logradouro:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="logradouro"
-              placeholder="Rua, Estrada, Via, Travessa"
-            />
-          </div>
-          <div class="col-md-1">
-            <label for="numero" class="form-label">N.º:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="numero"
-              placeholder="Nº"
-            />
-          </div>
-          <div class="col-md-2">
-            <label for="bairro" class="form-label">Bairro:</label>
-            <input type="text" class="form-control" id="bairro" />
-          </div>
-
-          <div class="col-md-2">
-            <label for="municipio" class="form-label">Municipio:</label>
-            <input type="text" class="form-control" id="municipio" />
-          </div>
-
-          <div class="col-md-1">
-            <label for="uf" class="form-label">Estado:</label>
-            <input type="text" class="form-control" id="uf" />
-          </div>
-
-          <div class="container-fluid text-center pt-4">
-            <button type="submit" class="btn btn-warning">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="currentColor"
-                class="bi bi-person-fill-x pb-1"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"
-                />
-                <path
-                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-.646-4.854.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 0 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 .708-.708Z"
-                />
-              </svg>
-              Cancelar
-            </button>
-            <button type="submit" class="btn btn-danger">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="currentColor"
-                class="bi bi-person-fill-dash pb-1"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Zm0-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                />
-                <path
-                  d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"
-                />
-              </svg>
-              Excluir
-            </button>
-            <button
-              type="submit"
-              class="btn btn-success"
-              onclick="frmcadpessoa()"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                fill="currentColor"
-                class="bi bi-person-fill-add pb-1"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                />
-                <path
-                  d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"
-                />
-              </svg>
-              Cadastrar
-            </button>
-          </div>
-        </form>
+        <div class="session"></div>
       </div>
     </section>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../js/sidebars.js"></script>
-    <script src="../controllers/appConsultaCep.js"></script>
-    <script src="../controllers/frmCadPessoas.js"></script>
   </body>
 </html>
